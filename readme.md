@@ -38,7 +38,9 @@ Para mejorar la modularidad, se ha abandonado el "paquete por defecto" y se ha o
 ### 4. DevOps y Automatización
 Se ha preparado el proyecto para ser gestionado con **Apache Maven** (opcional según el entorno) y se ha estructurado para facilitar la integración de linters como **CheckStyle**, asegurando que el código cumple con los estándares de formato de Java.
 
----
+Se ha migrado el proyecto a **Apache Maven**.
+- **Estandarización**: Se ha adoptado la estructura de carpetas `src/main/java`, lo que facilita la portabilidad del proyecto.
+- **Automatización (DevOps)**: Se ha configurado el `pom.xml` con el plugin de **CheckStyle**. Esto permite automatizar la revisión de la calidad del código y asegurar que se siguen las convenciones de nombrado y formato de Java de manera consistente.
 
 ## Instrucciones de Ejecución
 Para lanzar la aplicación, ejecuta la clase `CalculatorController` situada en el paquete `com.recuperacion.controller`, la cual contiene el método `main` que orquesta el arranque de todos los módulos.
